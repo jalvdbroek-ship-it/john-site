@@ -21,29 +21,34 @@ Dan naar <http://localhost:8000>.
 - `assets/css/style.css` — alle styling, design tokens en de responsieve regels.
 - `assets/js/confetti.js` — de confetti bij de knop "Vier het". Zonder
   libraries, en bij "reduced motion" geeft de knop alleen een kleurwissel.
+- `assets/js/nav.js` — de navigatie krijgt een hairline zodra je scrolt.
 
 ## Aanpassen
 
 - **Tekst**: de koppen en alinea's staan in `index.html`, per `<section>`.
 - **E-mailadres**: in `index.html`, het `href="mailto:..."` van de knop "Mail John".
-- **Kleuren**: in `assets/css/style.css` bij `:root` (de poster en de
-  schemerstand) en in de `@media (prefers-color-scheme: dark)` blok
-  daaronder (diepere nacht).
-- **Lettertypen**: Archivo (koppen, variabel in breedte en gewicht) en
-  Instrument Sans (tekst), geladen via Google Fonts.
+- **Kleuren**: in `assets/css/style.css` bij `:root`. Wit canvas, `--ink`
+  voor de tekst, `--blue` voor links en knoppen, `--off-white` voor de
+  afwisselende sectie.
+- **Lettertypen**: Inter Tight (koppen) en Inter (tekst), geladen via
+  Google Fonts.
 
 ## Ontwerp
 
-De pagina is een filmposter. De bovenste helft is een zonsondergang: een
-verloop van diep paars via magenta en rood naar goud, met de zon als schijf
-achter het midden van het voetbalveld. "JOHN" staat in grote goudkleurige
-letters boven de horizon, het veld is een silhouet onderaan.
+De pagina is opgebouwd als een productpagina: wit canvas, grote strakke
+titels, veel lucht, en één blauwe accentkleur voor links en knoppen.
 
-Onder de poster gaat de pagina verder in schemer: donker plum met goud
-als accent. Dat is de nacht na de zonsondergang.
+Het middenstuk is het product: het voetbalveld in een afgerond kader met
+zonsondergang, de zon als schijf in het midden. Het veld tekent zichzelf
+bij het laden.
 
-Alle kleurcontrasten zijn gemeten en voldoen aan WCAG 2.2 AA, in zowel de
-lichte als de donkere modus.
+Daaronder drie secties, elk met een eigen beeld: de positiebeweging van
+het voetbal, het AI-gesprek, en de letterspecimen. De contactsectie staat
+centraal met twee knoppen.
 
-- **Poster**: `--sky-1` tot `--sky-7` in `assets/css/style.css`.
-- **Lichaam**: `--bg`, `--surface`, `--ink`, `--accent` in dezelfde `:root`.
+Alle kleurcontrasten zijn gemeten en voldoen aan WCAG 2.2 AA.
+
+- **Kleuren**: `--white`, `--off-white`, `--ink`, `--ink-muted`, `--blue`
+  in `assets/css/style.css`.
+- **Zonsondergang**: `--sky-1` tot `--sky-7` plus `--sun`, alleen gebruikt
+  binnen het productkader.

@@ -13,7 +13,7 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  var COLORS = ["#FFC24D", "#FFE571", "#F09C17", "#E05A00", "#89002F", "#201136"];
+  var COLORS = ["#0071E3", "#0066CC", "#1D1D1F", "#6E6E73", "#D2D2D7", "#FFFFFF"];
 
   function makeCanvas() {
     if (canvas) return;
